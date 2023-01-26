@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="com.jspiders.springcorepractice.bean.Husband">
+        <property name="id">
+        <value>1</value>
+        </property>
+        <property name="name">
+        <value>sadanand</value>
+        </property>
+        <property name="age">
+        <value>22</value>
+        </property>
+        <property name="contact">
+        <value>1111111111</value>
+        </property>
+        
+        
+        </bean>
+        <bean class="com.jspiders.springcorepractice.bean.Husband" name="husband1">
+        <property name="id" value="2"/>
+        <property name="name" value="manisha"/>
+        <property name="age" value="22"/>
+        <property name="contact" value="9090909090"/>
+        
+        </bean>
+        <bean class="com.jspiders.springcorepractice.bean.Husband" name="husband2">
+       <constructor-arg name="id">
+       <value>3</value>
+       
+       </constructor-arg>
+       <constructor-arg name="name">
+       <value>Chiku</value>
+       
+       </constructor-arg>
+       <constructor-arg name="age">
+       <value>21</value>
+       
+       </constructor-arg>
+       <constructor-arg name="contact">
+       <value>12345678</value>
+       
+       </constructor-arg>
+        
+        </bean>
+        
+         <bean class="com.jspiders.springcorepractice.bean.Husband" name="husband3">
+       <constructor-arg name="id" value="4"/>
+      
+       <constructor-arg name="name" value="kari"/>
+      
+       <constructor-arg name="age" value="23"/>
+      
+       <constructor-arg name="contact" value="987654321"/>
+  
+        </bean>
+        <bean class="com.jspiders.springcorepractice.bean.StudentPractice" name="sada1">
+        <property name="id" value="1"/>
+         <property name="name" value="sada"/>
+        
+        
+        </bean>
+        
+         <bean class="com.jspiders.springcorepractice.bean.StudentPractice" name="sada2">
+       <constructor-arg name="id" value="4"/>
+      
+       <constructor-arg name="name" value="nitin"/>
+  
+        </bean>
+        
+        
+        
+        
+        
+        
+        
+</beans>
