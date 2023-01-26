@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="com.jspiders.spring.bean.StudentBean">
+        <property name="id">
+        <value>1</value>
+        </property>
+        <property name="name">
+        
+        <value>sada</value>
+        </property>
+        <property name="email">
+        <value>sada@gmail.com</value>
+        </property>
+        
+        
+        </bean>
+         <bean class="com.jspiders.spring.bean.StudentBean" name="student1">
+        <property name="id" value="2"/>
+        <property name="name" value="mohit"/>
+        <property name="email" value="mohit@gmail.com"/>
+        </bean>
+        
+         <bean class="com.jspiders.spring.bean.StudentBean" name="student2">
+         <constructor-arg name="id" >
+         <value>3</value>
+         </constructor-arg>
+         <constructor-arg name="name" >
+         <value>kari</value>
+         </constructor-arg>
+         <constructor-arg name="email" >
+         <value>kari@gmail.com</value>
+         </constructor-arg>
+         </bean>
+          <bean class="com.jspiders.spring.bean.StudentBean" name="student3">
+         <constructor-arg name="id" value="4"/>
+         <constructor-arg name="name" value="aruhi"/>
+         <constructor-arg name="email" value="aruhi@gmail.com"/>
+         </bean>
+        
+</beans>
